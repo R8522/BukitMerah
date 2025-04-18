@@ -24,7 +24,7 @@ if 'Sebab3' in data.columns:
 # --- Info Asas ---
 st.subheader("🔎 Ringkasan Data")
 st.write("Jumlah responden:", data.shape[0])
-st.dataframe(data.head())
+st.dataframe(data)
 
 # --- Nilai Hilang ---
 st.subheader("📌 Nilai Kosong")
