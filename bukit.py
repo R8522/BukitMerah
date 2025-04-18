@@ -53,13 +53,15 @@ for col in kategori:
     st.markdown(f"**{col}**")
     st.write(data[col].describe())
 
-st.markdown(""" Operasi = Adakah pengguna ingin melihat perpustakaan desa ini terus beroperasi?
+st.markdown(""" 
+Operasi = Adakah pengguna ingin melihat perpustakaan desa ini terus beroperasi?
 Y = Ya
 T = Tidak
 
 Strategik = Adakah lokasi perpustakaan strategik dan mudah dikunjung?
 Y = Ya
 T = Tidak
+
 """)
 
 # --- Visualization (optional) ---
