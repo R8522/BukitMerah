@@ -80,7 +80,7 @@ T = Tidak
 # --- Visualization (optional) ---
 st.subheader("📈 Visualisasi Pilihan")
 
-if st.checkbox("Graf pendapat penutupan library"):
+if st.checkbox("**Graf pendapat penutupan library**"):
     st.bar_chart(data['Pendapat_penutupan'].value_counts())
 st.markdown(""" 
 TP = Tidak perlu ditutup
@@ -89,7 +89,7 @@ P = Perlu ditutup
 
 """)
 
-if st.checkbox("Graf jarak kediaman pengunjung"):
+if st.checkbox("**Graf jarak kediaman pengunjung**"):
     st.bar_chart(data['Jarak'].value_counts())
 st.markdown(""" 
 0-900 meter = 1
