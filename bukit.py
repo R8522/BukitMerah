@@ -45,6 +45,14 @@ with col2:
     st.write(data['Jarak'].describe())
 
 
+st.markdown(""" 
+Pendapat_penutupan = Apakah pendapat pengguna/pengunjung berkaitan dengan penutupan perpustakaan ini?
+
+TP = Tidak perlu ditutup
+P = Perlu ditutup
+
+""")
+
 # --- Kolum Kategori Lain ---
 st.subheader("📋 Statistik Kolum Kategori Lain")
 
@@ -54,11 +62,13 @@ for col in kategori:
     st.write(data[col].describe())
 
 st.markdown(""" 
-Operasi = Adakah pengguna ingin melihat perpustakaan desa ini terus beroperasi?
+Operasi = Adakah pengguna/pengunjung ingin melihat perpustakaan desa ini terus beroperasi?
+
 Y = Ya
 T = Tidak
 
 Strategik = Adakah lokasi perpustakaan strategik dan mudah dikunjung?
+
 Y = Ya
 T = Tidak
 
