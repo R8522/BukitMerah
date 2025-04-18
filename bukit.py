@@ -49,6 +49,7 @@ st.markdown("""
 Pendapat_penutupan = Apakah pendapat pengguna/pengunjung berkaitan dengan penutupan perpustakaan ini?
 
 TP = Tidak perlu ditutup
+
 P = Perlu ditutup
 
 """)
@@ -65,11 +66,13 @@ st.markdown("""
 Operasi = Adakah pengguna/pengunjung ingin melihat perpustakaan desa ini terus beroperasi?
 
 Y = Ya
+
 T = Tidak
 
 Strategik = Adakah lokasi perpustakaan strategik dan mudah dikunjung?
 
 Y = Ya
+
 T = Tidak
 
 """)
