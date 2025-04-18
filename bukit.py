@@ -59,7 +59,7 @@ if st.checkbox("Tunjuk graf pendapat penutupan"):
     st.bar_chart(data['Pendapat_penutupan'].value_counts())
 
 if st.checkbox("Tunjuk histogram jarak"):
-    st.hist(data['Jarak'], bins=5)
+    st.bar_chart(data['Jarak'].value_counts())
 
 
 
