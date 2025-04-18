@@ -5,6 +5,7 @@ import pandas as pd
 st.title("Analisis Penutupan Perpustakaan Bukit Merah")
 
 # --- Load Data ---
+st.dataframe(("📥 Data Asal"))
 st.header("📥 Data Asal")
 
 df1 = pd.read_csv('Bukit Merah.csv')  # pastikan fail ni ada dalam repo yang sama
