@@ -4,6 +4,23 @@ import pandas as pd
 # --- Title ---
 st.title("Analisis Penutupan Perpustakaan Bukit Merah")
 
+# Navigation
+st.sidebar.title("📂 Navigasi")
+page = st.sidebar.selectbox("Pilih Lokasi", ["Desa Sempeneh", "Bukit Merah", "Kuala Dipang"])
+
+if page == "Desa Sempeneh":
+    import DesaSempeneh
+    DesaSempeneh.run()
+
+elif page == "Bukit Merah":
+    import bukit
+    bukit.run()
+
+elif page == "Kuala Dipang":
+    import KualaDipang
+    KualaDipang.run()
+
+
 # --- Load Data ---
 st.header("📥 Data Asal")
 
