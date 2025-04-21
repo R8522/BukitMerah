@@ -7,9 +7,7 @@ st.title("Analisis Responden Terhadap Perpustakaan Komuniti")
 st.markdown("Data dari komuniti Desa Sempeneh tentang pandangan terhadap perpustakaan.")
 
 # Upload CSV
-uploaded_file = st.file_uploader("Muat naik fail CSV", type=["csv"])
-if uploaded_file is not None:
-    data = pd.read_csv(uploaded_file)
+data = pd.read_csv('Desa sempeneh.csv')
 
     # Tunjuk ringkasan
     st.subheader("📌 Ringkasan Data")
