@@ -14,7 +14,7 @@ page = st.sidebar.selectbox(
 # Routing
 if page == "Desa Sempeneh":
     import DesaSempenehPage
-    DesaSempenehPage.run()
+    DesaSempeneh.run()
 
 elif page == "Bukit Merah":
     import bukit
