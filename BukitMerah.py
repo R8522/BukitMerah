@@ -10,8 +10,10 @@ st.header("📥 Data Asal")
 df1 = pd.read_csv('Bukit Merah.csv')  # pastikan fail ni ada dalam repo yang sama
 df2 = pd.read_csv('Data Sebab Bukit Merah.csv')
 
-# --- Gabung Data ---
-data = pd.merge(df1, df2, on='Bil', how='inner')
+df1.columns = df1.columns.str.strip().str.lower()
+df2.columns = df2.columns.str.strip().str.lower()
+
+data = pd.merge(df1, df2, on='bil', how='inner')
 
 # Gabung kolum Kunjungan
 data['Kunjungan'] = data['Kunjungan_x']
